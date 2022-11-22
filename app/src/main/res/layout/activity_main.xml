@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/prev"
+        android:layout_width="187dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#0e0f37"
+        android:text=" 왼쪽 "
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></Button>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="187dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#0e0f37"
+        android:text=" 오른쪽 "
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"></Button>
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f6e8ca"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-62dp">
+        <!--메인사진-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="108dp"
+                android:layout_marginTop="144dp"
+                android:text="전주 소개앱"
+                android:textColor="#000080"
+                android:textSize="55dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!--********************전주 한옥마을*******************************-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/hanok"
+                android:layout_width="231dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:src="@drawable/hanok"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+            <ImageView
+                android:id="@+id/giwa"
+                android:layout_width="164dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="232dp"
+                android:layout_marginTop="28dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/giwa"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="228dp"
+                android:layout_marginTop="76dp"
+                android:text="전주 한옥마을"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="228dp"
+                android:layout_marginTop="112dp"
+                android:text="600여개의 한옥이 밀집된"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="228dp"
+                android:layout_marginTop="132dp"
+                android:text="전주 대표 여행지"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="230dp"
+                android:text="전주 풍남동 일대에 700여 채의 한옥이 군락을 이루고 있는\n
+국내 최대 규모의 전통 한옥촌이며, 전국 유일의 도심 한옥군입니다.\n
+1910년 조성되기 시작한 우리나라 근대 주거문화 발달과정의\n
+중요한 공간으로, 경기전, 오목대, 향교 등 중요 문화재와\n
+20여개의 문화시설이 산재되어 있으며,\n
+한옥, 한식, 한지, 한소리, 한복, 한방 등 韓스타일이\n
+집약된 대한민국 대표 여행지입니다."
+                android:textColor="#000000"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="453dp"
+                android:text=" 주소 : 전라북도 전주시 완산구 풍남동3가 기린대로 99\n
+영업시간 : 24시간 영업\n
+전화번호 : 063-282-1330\n
+지역 : 전라북도"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!--********************전동성당*******************************-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/sungdang"
+                android:layout_width="231dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:src="@drawable/sungdang"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="228dp"
+                android:layout_marginTop="76dp"
+                android:text="전동성당"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="228dp"
+                android:layout_marginTop="112dp"
+                android:text="영화 접속 촬영지로"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="228dp"
+                android:layout_marginTop="132dp"
+                android:text="유명한 고풍스런 성당"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="230dp"
+                android:text="천주교 신자들을 사형했던 풍남문 밖의 순교터에 지어진 성당이다.\n
+프랑스 신부인 위돌박이 설계·감독을 하였고\n
+1914년에 착공 된 것으로 전해 진다. 회색과 붉은색 벽돌을\n
+이용해 지은 건물은 겉모습이 서울의 명동성당과 비슷하며,\n
+초기 천주교 성당 중에서 매우 아름다운 건물로 손꼽힌다."
+                android:textColor="#000000"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="453dp"
+                android:text=" 주소 : 전북 전주시 완산구 태조로 51 (전동 200-1)\n
+영업시간 : 09:00~18:00\n
+전화번호 : 063-284-3222, 286-3222\n
+지역 : 전라북도"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!--********************경기전*******************************-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gunggijun"
+                android:layout_width="231dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:src="@drawable/gunggijun"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="228dp"
+                android:layout_marginTop="76dp"
+                android:text="경기전"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="228dp"
+                android:layout_marginTop="112dp"
+                android:text="서울에 경복궁이 있다면"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="228dp"
+                android:layout_marginTop="132dp"
+                android:text="전주엔 경기전이 있다!"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="230dp"
+                android:text="사적 전주 경기전은 조선 왕조를 개국시킨\n
+태조 이성계의 어진을 봉안한 곳이다.\n
+태조 어진을 모신 곳을 어용전, 태조진전 등으로 명명하던 것을\n
+1442년(세종24년)에 경기전이라고 명명하였다.\n
+1410년에 창건된 경기전은 1597년 정유재란 때\n
+소실되고 1614년에 중건했다."
+                android:textColor="#000000"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="453dp"
+                android:text=" 주소 : 전라북도 전주시 완산구 태조로 44\n
+영업시간 : 09:00~18:00\n
+전화번호 : 063-281-2790\n
+지역 : 전라북도"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!--********************오목대*******************************-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/omok"
+                android:layout_width="231dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:src="@drawable/omok"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="228dp"
+                android:layout_marginTop="76dp"
+                android:text="오목대"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="228dp"
+                android:layout_marginTop="112dp"
+                android:text="한옥 마을 풍경을"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="228dp"
+                android:layout_marginTop="132dp"
+                android:text="한 눈에 내려다 보고 싶다면"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="230dp"
+                android:text="1380년(고려 우왕 6년)에 이성계가 운봉 황산에서\n
+왜군을 무찌르고 돌아가던 중 자신의 고조부인 목조가\n
+살았던 이 곳에 들러 승전을 자축한 곳이다.\n
+1974년 9월 24일 전라북도의 기념물 제16호로 지정되었다."
+                android:textColor="#000000"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="453dp"
+                android:text=" 주소 : 전라북도 전주시 완산구 기린대로 55\n
+영업시간 : 24시간 영업\n
+전화번호 :  063-232-2255\n
+지역 : 전라북도"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!--********************자만 벽화마을*******************************-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/jaman"
+                android:layout_width="231dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:src="@drawable/jaman"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="228dp"
+                android:layout_marginTop="76dp"
+                android:text="자만 벽화마을"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="228dp"
+                android:layout_marginTop="112dp"
+                android:text="걷는 재미가 있는"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="228dp"
+                android:layout_marginTop="132dp"
+                android:text="알록달록 골목길"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="230dp"
+                android:text="산비탈에 자리한 자만벽화마을은 이 일대 주택 40여 채의\n
+담장과 골목을 만화, 꽃, 하트 등의 테마로 단장해 조성한 벽화마을이다.\n
+전주시가 이 사업을 추진했으며, 현재 이곳은 한옥마을만큼은\n
+아니지만 골목마다 관광객들의 발길이 끊이지 않는다."
+                android:textColor="#000000"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="453dp"
+                android:text=" 주소 : 전라북도 전주시 한옥레일바이크\n
+영업시간 : 24시간 영업\n
+전화번호 :  X\n
+지역 : 전라북도"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ViewFlipper>
+</androidx.constraintlayout.widget.ConstraintLayout>
